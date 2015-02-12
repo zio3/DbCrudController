@@ -9,7 +9,7 @@ using System.Web.Mvc;
 
 namespace DbCrudController
 {
-    public class GenericDbCludController<TEntity, TDC> : Controller
+    public class DbCrudController<TEntity, TDC> : Controller
         where TDC : DbContext, new()
         where TEntity : class,new()
     {
